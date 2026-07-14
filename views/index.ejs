@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>The NOTE</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="nav">
+        <img src="/images/icon .png" width="40px" height="40px" alt="">
+        <h3>The NOTE</h3>
+    </div>
+    <!-- FORM -->
+    <div class="formfill">
+        <div class="title">
+            <h3>Title</h3>
+            <form action="/create" method="post">
+                <input class="input" name="title" type="text" placeholder="Note title goes here">
+            
+        </div>
+        <div class="description">
+            <h3>Description</h3>
+           
+            <textarea name="description" placeholder="Note description goes here" id="textarea"></textarea>
+           
+        </div>
+        <div class="add">
+            
+            <input type="submit" class="btn" value="ADD NOTE"></input>
+             </form>
+        </div>
+    </div>
+    <!-- NOTES -->
+    <div class="notes">
+        <%if(Notes.length>0){%>
+            <% Notes.forEach((val)=>{%>
+                <div class="task">
+                    <h3><%= val %></h3>
+                    <a href="/Notes/<%= val %>" class="a">Know More</a>
+                    <a href="/edit/<%= val %>" class="ab">Edit</a>
+                </div>
+                <% })%>
+                    <%} else {%>
+                        <div>
+                            <p class="msg">No Note yet</p>
+                        </div>
+                        <%}%>
+    </div>
+
+    <div class="footer">
+
+    </div>
+    </div>
+</body>
+
+</html>

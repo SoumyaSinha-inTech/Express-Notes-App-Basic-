@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style3.css">
+    <title>Edit</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="/images/icon .png" width="40px" height="40px" alt="">
+        <h3>The NOTE</h3>
+    </div>
+    <a class="a" href="/">HOMEPAGE</a>
+    <div class="main">
+        <div class="title">
+            <h3>Previous Name</h3>
+            <form action="/editing" method="post">
+                <input class="input" name="oldName"  type="text" value=<%=old%>  >
+            
+        </div>
+        <div class="title">
+            <h3>New Name</h3>
+                <input class="input" name="newName" type="text" placeholder="Enter new name">
+            
+        </div>
+        <div class="add">
+            <input type="submit" class="btn" value="Rename"></input>
+             </form>
+        </div>
+    </div>
+</body>
+</html>

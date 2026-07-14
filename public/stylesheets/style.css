@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html,
+body{
+    width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+.nav{
+    font-family: Montserrat;
+     background-color: rgb(60, 60, 60);
+    display: flex;
+    height: 50px;
+    align-items: center;
+    color: white;
+}
+.formfill{
+    background-color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    color: white;
+}
+.title{
+    padding-top: 20px;
+    margin-left: 30vw;
+}
+.input{
+    background-color: rgb(47, 47, 47);
+    width: 40vw;
+    height: 40px;
+    border-radius: 20px;
+    color: whitesmoke;
+    
+}
+.description{
+    padding-top: 20px;
+    margin-left: 30vw;
+}
+#textarea{
+    background-color: rgb(47, 47, 47);
+    width: 40vw;
+    min-height: 100px;
+    border-radius: 20px;
+    color: whitesmoke;
+    resize: none;
+}
+.add{
+    padding-top: 20px;
+    margin-left: 30vw;
+}
+.task{
+     background-color: rgb(52, 52, 52);
+    width: 20vw;
+    min-height: 15vh;
+   
+}
+.task h3{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.task a{
+    display: block;
+    text-align: center;
+    color: rgb(0, 136, 255);
+    margin-top: 10px;
+}
+.btn{
+    background-color: rgb(255, 196, 0);
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+}
+.notes{
+    width: 85vw;
+    margin-left: 7.5vw;
+    margin-top: 10vh;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8vw;
+}
+.footer{
+    height: 10vh;
+}
+.msg{
+    color: gray;
+}
+.task a{
+    display: block;
+    text-align: center;
+    color: rgb(0, 136, 255);
+    margin-top: 10px;
+}
